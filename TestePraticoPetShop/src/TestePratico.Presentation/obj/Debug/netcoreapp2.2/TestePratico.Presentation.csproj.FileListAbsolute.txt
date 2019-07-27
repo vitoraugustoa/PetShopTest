@@ -1,0 +1,14 @@
+C:\Users\Vitor\source\repos\TestePraticoPetShop\src\TestePratico.Presentation\bin\Debug\netcoreapp2.2\TestePratico.Presentation.deps.json
+C:\Users\Vitor\source\repos\TestePraticoPetShop\src\TestePratico.Presentation\bin\Debug\netcoreapp2.2\TestePratico.Presentation.runtimeconfig.json
+C:\Users\Vitor\source\repos\TestePraticoPetShop\src\TestePratico.Presentation\bin\Debug\netcoreapp2.2\TestePratico.Presentation.runtimeconfig.dev.json
+C:\Users\Vitor\source\repos\TestePraticoPetShop\src\TestePratico.Presentation\bin\Debug\netcoreapp2.2\TestePratico.Presentation.dll
+C:\Users\Vitor\source\repos\TestePraticoPetShop\src\TestePratico.Presentation\bin\Debug\netcoreapp2.2\TestePratico.Presentation.pdb
+C:\Users\Vitor\source\repos\TestePraticoPetShop\src\TestePratico.Presentation\obj\Debug\netcoreapp2.2\TestePratico.Presentation.csproj.CoreCompileInputs.cache
+C:\Users\Vitor\source\repos\TestePraticoPetShop\src\TestePratico.Presentation\obj\Debug\netcoreapp2.2\TestePratico.Presentation.AssemblyInfoInputs.cache
+C:\Users\Vitor\source\repos\TestePraticoPetShop\src\TestePratico.Presentation\obj\Debug\netcoreapp2.2\TestePratico.Presentation.AssemblyInfo.cs
+C:\Users\Vitor\source\repos\TestePraticoPetShop\src\TestePratico.Presentation\obj\Debug\netcoreapp2.2\TestePratico.Presentation.dll
+C:\Users\Vitor\source\repos\TestePraticoPetShop\src\TestePratico.Presentation\obj\Debug\netcoreapp2.2\TestePratico.Presentation.pdb
+C:\Users\Vitor\source\repos\TestePraticoPetShop\src\TestePratico.Presentation\obj\Debug\netcoreapp2.2\TestePratico.Presentation.csprojAssemblyReference.cache
+C:\Users\Vitor\source\repos\TestePraticoPetShop\src\TestePratico.Presentation\bin\Debug\netcoreapp2.2\TestePratico.Domain.dll
+C:\Users\Vitor\source\repos\TestePraticoPetShop\src\TestePratico.Presentation\bin\Debug\netcoreapp2.2\TestePratico.Domain.pdb
+C:\Users\Vitor\source\repos\TestePraticoPetShop\src\TestePratico.Presentation\obj\Debug\netcoreapp2.2\TestePratico.Presentation.csproj.CopyComplete

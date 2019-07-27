@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.2",
+    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "TestePratico.Presentation/1.0.0": {
+        "dependencies": {
+          "TestePratico.Domain": "1.0.0"
+        },
+        "runtime": {
+          "TestePratico.Presentation.dll": {}
+        }
+      },
+      "TestePratico.Domain/1.0.0": {
+        "runtime": {
+          "TestePratico.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TestePratico.Presentation/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TestePratico.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
