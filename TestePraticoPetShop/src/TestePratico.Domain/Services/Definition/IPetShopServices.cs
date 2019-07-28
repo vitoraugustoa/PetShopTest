@@ -7,6 +7,6 @@ namespace TestePratico.Domain.Services.Definition
 {
     public interface IPetShopServices
     {
-       PetShopResponseViewModel GetBestPetShop(PetShopInputViewModel petShopInput);
+       PetShopResponseViewModel GetBetterPetShop(PetShopInputViewModel petShopInput);
     }
 }

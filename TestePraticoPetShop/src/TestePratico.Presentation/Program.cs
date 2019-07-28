@@ -2,25 +2,31 @@
 using TestePratico.Domain;
 using TestePratico.Domain.Model;
 using TestePratico.Domain.Services.Definition;
+using TestePratico.Presentation.Services;
+using TestePratico.Presentation.Services.Definition;
 
 namespace TestePratico.Presentation
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
             IPetShopServices petShopService = new PetShopServices();
-            var input = new PetShopInputViewModel {
-                DateOfBath = DateTime.Now,
-                QuantityBigDogs = 2,
-                QuantitySmallDogs = 3
-            };
+            IProgramServices _programServices = new ProgramServices();
+            var petShopInput = new PetShopInputViewModel();
+            bool inputDataIsValid = true;
 
-            var teste = petShopService.GetBestPetShop(input);
+            do
+            {
+                Console.WriteLine("Digite os dados de entrada no formato, <data> <Quant Caes pequenos> <Quant Caes grandes>:");
+                petShopInput = _programServices.FormatInputData(Console.ReadLine()); 
+                inputDataIsValid = String.IsNullOrEmpty(petShopInput.ErrorMessage) ? true : false;    
+            } while (inputDataIsValid == false);
 
-            Console.WriteLine($"Nome Ganhador: {teste.BestKennelName}" );
-            Console.WriteLine($"Valor total: {teste.TotalPriceDogBath}");
-            Console.WriteLine($"Distancia: {teste.DogKennelDistanceMetre}");
+            var petShopResponse = petShopService.GetBetterPetShop(petShopInput);
+
+            Console.WriteLine($"Melhor Canil: {petShopResponse.BestPetShopName}" );
+            Console.WriteLine($"Preço Total: {petShopResponse.TotalPriceDogBath}");
             Console.ReadKey();
         }
     }

@@ -12,8 +12,25 @@ namespace TestePratico.Domain.Model
         public decimal TotalPrice { get; protected set; }
         public int DogKennelDistanceMetre { get; protected set; }
 
-        protected abstract decimal GetSmallDogPrice(DateTime dateOfBath);
-        protected abstract decimal GetBigDogPrice(DateTime dateOfBath);
-        public abstract PetShopResponseViewModel GetTotalPrice(int QuantitySmallDogs, int QuantityBigDogs, DateTime DateOfBath);
+        protected virtual decimal GetSmallDogPrice(DateTime dateOfBath)
+        {
+            return SmallDogBathPrice;
+        }
+
+        protected virtual decimal GetBigDogPrice(DateTime dateOfBath)
+        {
+            return BigDogBathPrice;
+        }
+
+        public virtual PetShopResponseViewModel GetTotalPrice(int QuantitySmallDogs, int QuantityBigDogs, DateTime DateOfBath)
+        {
+            return new PetShopResponseViewModel
+            {
+                BestPetShopName = PetShopName,
+                DogKennelDistanceMetre = DogKennelDistanceMetre,
+                TotalPriceDogBath = (GetSmallDogPrice(DateOfBath) * QuantitySmallDogs) +
+                                              (GetBigDogPrice(DateOfBath) * QuantityBigDogs)
+            };
+        }
     }
 }

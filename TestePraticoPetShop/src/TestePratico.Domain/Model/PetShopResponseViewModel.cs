@@ -6,7 +6,7 @@ namespace TestePratico.Domain.Model
 {
     public class PetShopResponseViewModel
     {
-        public string BestKennelName { get; set; }
+        public string BestPetShopName { get; set; }
         public decimal TotalPriceDogBath { get; set; }
         public int DogKennelDistanceMetre { get; set; }
     }

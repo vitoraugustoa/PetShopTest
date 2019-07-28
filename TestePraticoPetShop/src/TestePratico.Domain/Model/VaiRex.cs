@@ -8,15 +8,15 @@ namespace TestePratico.Domain.Model
 {
     public class VaiRex : PetShop
     {
-        private IHelper _helper;
+        private IHelpers _helper;
         private const decimal ADD_PRICE_WEEKEND = 5.0m;
 
-        public VaiRex()
+        public VaiRex(decimal _smallDogBathPrice,decimal _bigDogBathPrice, int _dogKennelDistanceMetre)
         {
             PetShopName = "Vai Rex";
-            SmallDogBathPrice = 20.0m;
-            BigDogBathPrice = 40.0m;
-            DogKennelDistanceMetre = 1700;
+            SmallDogBathPrice = _smallDogBathPrice;
+            BigDogBathPrice = _bigDogBathPrice;
+            DogKennelDistanceMetre = _dogKennelDistanceMetre;
             _helper = new Helpers();
         }
 
@@ -28,19 +28,6 @@ namespace TestePratico.Domain.Model
         protected override decimal GetBigDogPrice(DateTime dateOfBath)
         {
             return (_helper.IsWeekend(dateOfBath)) ? BigDogBathPrice += ADD_PRICE_WEEKEND : BigDogBathPrice;
-        }
-
-        public override PetShopResponseViewModel GetTotalPrice(int QuantitySmallDogs, int QuantityBigDogs, DateTime DateOfBath)
-        {
-            var petShopResponde = new PetShopResponseViewModel
-            {
-                BestKennelName = PetShopName,
-                DogKennelDistanceMetre = DogKennelDistanceMetre,
-                TotalPriceDogBath = (GetSmallDogPrice(DateOfBath) * QuantitySmallDogs) +
-                                              (GetBigDogPrice(DateOfBath) * QuantityBigDogs)
-            };
-
-            return petShopResponde;
         }
     }
 }
