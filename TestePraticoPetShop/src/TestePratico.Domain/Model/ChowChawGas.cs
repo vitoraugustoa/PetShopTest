@@ -8,12 +8,12 @@ namespace TestePratico.Domain.Model
 {
     public class ChowChawGas : PetShop
     {
-        public ChowChawGas(decimal _smallDogBathPrice, decimal _bigDogBathPrice, int _dogKennelDistanceMetre)
+        public ChowChawGas(decimal smallDogBathPrice, decimal bigDogBathPrice, int dogKennelDistanceMetre)
         {
             PetShopName = "ChowChaw Gas";
-            SmallDogBathPrice = _smallDogBathPrice;
-            BigDogBathPrice = _bigDogBathPrice;
-            DogKennelDistanceMetre = _dogKennelDistanceMetre;
+            SmallDogBathPrice = smallDogBathPrice;
+            BigDogBathPrice = bigDogBathPrice;
+            DogKennelDistanceMetre = dogKennelDistanceMetre;
         }
     }
 }

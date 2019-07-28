@@ -11,7 +11,7 @@ namespace TestePratico.Tests
     [TestClass]
     public class PetShopServicesTest
     {
-        IPetShopServices _petShopServices = new PetShopServices();
+        private IPetShopServices _petShopServices = new PetShopServices();
 
         [TestMethod]
         public void GetBetterPetShop_MeuCaninoFeliz_Winner()

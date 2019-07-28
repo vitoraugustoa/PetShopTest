@@ -10,7 +10,7 @@ namespace TestePratico.Tests
     [TestClass]
     public class HelpersTest
     {
-        IHelpers _helper = new Helpers();
+        private IHelpers _helper = new Helpers();
 
         [TestMethod]
         public void IsWeekend_Receiving_Weekend_Date()

@@ -9,10 +9,11 @@ namespace TestePratico.Presentation
 {
     public class Program
     {
+       private static IPetShopServices _petShopService = new PetShopServices();
+       private static IProgramServices _programServices = new ProgramServices();
+
         static void Main(string[] args)
         {
-            IPetShopServices petShopService = new PetShopServices();
-            IProgramServices _programServices = new ProgramServices();
             var petShopInput = new PetShopInputViewModel();
             bool inputDataIsValid = true;
 
@@ -23,7 +24,7 @@ namespace TestePratico.Presentation
                 inputDataIsValid = String.IsNullOrEmpty(petShopInput.ErrorMessage) ? true : false;    
             } while (inputDataIsValid == false);
 
-            var petShopResponse = petShopService.GetBetterPetShop(petShopInput);
+            var petShopResponse = _petShopService.GetBetterPetShop(petShopInput);
 
             Console.WriteLine($"Melhor Canil: {petShopResponse.BestPetShopName}" );
             Console.WriteLine($"Preço Total: {petShopResponse.TotalPriceDogBath}");

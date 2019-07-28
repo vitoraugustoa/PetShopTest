@@ -11,7 +11,7 @@ namespace TestePratico.Tests
     [TestClass]
     public class ProgramServicesTest
     {
-        IProgramServices _ProgramServices = new ProgramServices();
+        private IProgramServices _ProgramServices = new ProgramServices();
 
         [TestMethod]
         public void FormatInputData_Receiving_Empty_Value()

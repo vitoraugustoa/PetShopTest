@@ -11,12 +11,12 @@ namespace TestePratico.Domain.Model
         private IHelpers _helper;
         private const decimal ADD_PRICE_WEEKEND = 5.0m;
 
-        public VaiRex(decimal _smallDogBathPrice,decimal _bigDogBathPrice, int _dogKennelDistanceMetre)
+        public VaiRex(decimal smallDogBathPrice,decimal bigDogBathPrice, int dogKennelDistanceMetre)
         {
             PetShopName = "Vai Rex";
-            SmallDogBathPrice = _smallDogBathPrice;
-            BigDogBathPrice = _bigDogBathPrice;
-            DogKennelDistanceMetre = _dogKennelDistanceMetre;
+            SmallDogBathPrice = smallDogBathPrice;
+            BigDogBathPrice = bigDogBathPrice;
+            DogKennelDistanceMetre = dogKennelDistanceMetre;
             _helper = new Helpers();
         }
 
